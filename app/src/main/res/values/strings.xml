@@ -3,4 +3,8 @@
     <string name="foodator">Foodator</string>
     <string name="get_start">Get Start</string>
     <string name="food_deliver_app">Food Deliver App</string>
+    <string name="hi_user">Hi User</string>
+    <string name="hi_chung">Hi Chung</string>
+    <string name="order_amp_eat"><![CDATA[Order & Eat]]></string>
+    <string name="todo">TODO</string>
 </resources>

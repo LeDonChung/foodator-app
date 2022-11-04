@@ -5,4 +5,82 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activities.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="2">
+                        <TextView
+                            android:gravity="center_vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/hi_chung"
+                            android:textSize="30sp"
+                            android:textStyle="bold"
+                            android:textColor="#FB8C00"
+                            tools:ignore="NestedWeights" />
+                        <TextView
+                            android:gravity="top"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/order_amp_eat"
+                            android:textColor="#000"
+                            android:textStyle="bold"
+                            android:textSize="25sp"
+                            android:layout_marginTop="5dp"/>
+                    </LinearLayout>
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/profile"
+                        android:padding="20dp"
+                        android:background="@null"
+                        android:contentDescription="@string/todo">
+
+                    </ImageView>
+                </LinearLayout>
+                <EditText
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textDirection="inherit"
+                    android:textStyle="italic"
+                    android:hint="Find Your Food"
+                    android:textSize="20sp"
+                    android:padding="40px"
+                    android:drawableLeft="@drawable/search"
+                    android:drawablePadding="30px"
+                    android:background="@drawable/custom_search_view"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

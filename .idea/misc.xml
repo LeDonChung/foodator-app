@@ -3,8 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/PC/AndroidStudioProjects/Projects/BIG/FoodatorApp/app/src/main/res/drawable/orange_light_banner.xml" value="0.131" />
         <entry key="..\:/Users/PC/AndroidStudioProjects/Projects/BIG/FoodatorApp/app/src/main/res/layout/activity_intro.xml" value="0.20521590423257802" />
-        <entry key="..\:/Users/PC/AndroidStudioProjects/Projects/BIG/FoodatorApp/app/src/main/res/layout/activity_main.xml" value="0.152" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/Projects/BIG/FoodatorApp/app/src/main/res/layout/activity_main.xml" value="0.176" />
       </map>
     </option>
   </component>
