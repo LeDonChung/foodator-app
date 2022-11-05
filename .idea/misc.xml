@@ -3,9 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/PC/AndroidStudioProjects/Projects/BIG/FoodatorApp/app/src/main/res/drawable/bottom_home.xml" value="0.144" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/Projects/BIG/FoodatorApp/app/src/main/res/drawable/bottom_profile.xml" value="0.144" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/Projects/BIG/FoodatorApp/app/src/main/res/drawable/bottom_settings.xml" value="0.144" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/Projects/BIG/FoodatorApp/app/src/main/res/drawable/bottom_support.xml" value="0.144" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/Projects/BIG/FoodatorApp/app/src/main/res/drawable/custom_orange_button.xml" value="0.144" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/Projects/BIG/FoodatorApp/app/src/main/res/drawable/custom_search_view.xml" value="0.144" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/Projects/BIG/FoodatorApp/app/src/main/res/drawable/custom_text_nav.xml" value="0.144" />
         <entry key="..\:/Users/PC/AndroidStudioProjects/Projects/BIG/FoodatorApp/app/src/main/res/drawable/orange_light_banner.xml" value="0.131" />
         <entry key="..\:/Users/PC/AndroidStudioProjects/Projects/BIG/FoodatorApp/app/src/main/res/layout/activity_intro.xml" value="0.20521590423257802" />
-        <entry key="..\:/Users/PC/AndroidStudioProjects/Projects/BIG/FoodatorApp/app/src/main/res/layout/activity_main.xml" value="0.176" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/Projects/BIG/FoodatorApp/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/Projects/BIG/FoodatorApp/app/src/main/res/menu/menu_nav.xml" value="0.176" />
       </map>
     </option>
   </component>
