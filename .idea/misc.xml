@@ -10,9 +10,13 @@
         <entry key="..\:/Users/PC/AndroidStudioProjects/Projects/BIG/FoodatorApp/app/src/main/res/drawable/custom_orange_button.xml" value="0.144" />
         <entry key="..\:/Users/PC/AndroidStudioProjects/Projects/BIG/FoodatorApp/app/src/main/res/drawable/custom_search_view.xml" value="0.144" />
         <entry key="..\:/Users/PC/AndroidStudioProjects/Projects/BIG/FoodatorApp/app/src/main/res/drawable/custom_text_nav.xml" value="0.144" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/Projects/BIG/FoodatorApp/app/src/main/res/drawable/ic_dolla.xml" value="0.1205" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/Projects/BIG/FoodatorApp/app/src/main/res/drawable/ic_plush.xml" value="0.1205" />
         <entry key="..\:/Users/PC/AndroidStudioProjects/Projects/BIG/FoodatorApp/app/src/main/res/drawable/orange_light_banner.xml" value="0.131" />
         <entry key="..\:/Users/PC/AndroidStudioProjects/Projects/BIG/FoodatorApp/app/src/main/res/layout/activity_intro.xml" value="0.20521590423257802" />
-        <entry key="..\:/Users/PC/AndroidStudioProjects/Projects/BIG/FoodatorApp/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/Projects/BIG/FoodatorApp/app/src/main/res/layout/activity_main.xml" value="0.16" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/Projects/BIG/FoodatorApp/app/src/main/res/layout/item_categories_layout.xml" value="0.18041704442429737" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/Projects/BIG/FoodatorApp/app/src/main/res/layout/item_food_layout.xml" value="0.4" />
         <entry key="..\:/Users/PC/AndroidStudioProjects/Projects/BIG/FoodatorApp/app/src/main/res/menu/menu_nav.xml" value="0.176" />
       </map>
     </option>

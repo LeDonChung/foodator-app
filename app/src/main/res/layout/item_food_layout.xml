@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_food_layout"
+    android:layout_width="100dp"
+    android:layout_height="150dp"
+    android:layout_margin="10dp"
+    android:backgroundTint="#FFFFFF"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="10dp"
+    app:cardMaxElevation="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <ImageView
+            android:id="@+id/pic_food"
+            android:layout_width="100dp"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:padding="10dp"
+            android:src="@drawable/pizza" />
+
+        <TextView
+            android:id="@+id/fee_food"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:text="0.0"
+            android:drawableLeft="@drawable/ic_dolla"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/add"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_orange_button"
+            android:textColor="#fff"
+            android:textSize="6dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:drawableLeft="@drawable/ic_plush"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="ADD"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
