@@ -1,6 +1,8 @@
 package com.dmt.ledonchung.foodatorapp.models;
 
-public class Category {
+import java.io.Serializable;
+
+public class Category implements Serializable {
     private String title, picture;
 
     public Category() {
@@ -17,7 +19,7 @@ public class Category {
     }
 
     public void setTitle(String title) {
-        if(title.trim().equals("")) {
+        if (title.trim().equals("")) {
             this.title = "don't have";
         } else {
             this.title = title;
@@ -29,7 +31,7 @@ public class Category {
     }
 
     public void setPicture(String picture) {
-        if(picture.trim().equals("")) {
+        if (picture.trim().equals("")) {
             this.picture = "don't have";
         } else {
             this.picture = picture;

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.CartActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                android:text="My cart"
+                android:textColor="@color/orange"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/list_cart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_marginHorizontal="20dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:weightSum="2"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:gravity="start"
+                        android:text="Items total: "
+                        android:textColor="@color/black"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:id="@+id/items_total"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:gravity="end"
+                        android:text="$19"
+                        android:textColor="@color/black"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:weightSum="2"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:gravity="start"
+                        android:text="Delivery Service: "
+                        android:textColor="@color/black"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:id="@+id/delivery"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:gravity="end"
+                        android:text="$19"
+                        android:textColor="@color/black"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginHorizontal="20dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:weightSum="2"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:gravity="start"
+                        android:text="Tax: "
+                        android:textColor="@color/black"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:id="@+id/tax"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:gravity="end"
+                        android:text="$19"
+                        android:textColor="@color/black"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:weightSum="2"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="32sp"
+                        android:textStyle="bold"
+                        android:gravity="start"
+                        android:text="Total: "
+                        android:textColor="@color/black"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:id="@+id/total"
+                        android:textSize="32sp"
+                        android:textStyle="bold"
+                        android:gravity="end"
+                        android:text="$19"
+                        android:textColor="@color/black"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+            <com.google.android.material.button.MaterialButton
+                android:layout_marginVertical="20dp"
+                android:id="@+id/check_out"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:backgroundTint="@color/orange"
+                android:focusable="false"
+                android:paddingVertical="10dp"
+                android:text="Check Out"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                app:cornerRadius="40dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottomAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:fabAlignmentMode="center"
+            app:fabAnchorMode="cradle"
+            app:fabCradleMargin="8dp"
+            app:fabCradleRoundedCornerRadius="50dp"
+            app:fabCradleVerticalOffset="6dp">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/nav_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                app:itemBackground="@android:color/transparent"
+                app:itemIconSize="30dp"
+                app:itemIconTint="@drawable/custom_text_nav"
+                app:itemTextColor="@drawable/custom_text_nav"
+                app:menu="@menu/menu_nav" />
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/orange"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/shopping_cart"
+            app:backgroundTint="@color/orange"
+            app:layout_anchor="@id/bottomAppBar"
+            app:tint="@color/black" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,6 @@
 package com.dmt.ledonchung.foodatorapp.adapters;
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,15 +13,20 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.dmt.ledonchung.foodatorapp.R;
-import com.dmt.ledonchung.foodatorapp.models.Category;
+import com.dmt.ledonchung.foodatorapp.interfaces.GoToDetailActivity;
 import com.dmt.ledonchung.foodatorapp.models.Food;
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
 public class PopularAdapter extends RecyclerView.Adapter<PopularAdapter.PopularHolder>{
     private final List<Food> list;
-    public PopularAdapter(List<Food> list) {
+    private GoToDetailActivity goToDetailActivity;
+    private Context context;
+    public PopularAdapter(List<Food> list, GoToDetailActivity goToDetailActivity, Context context) {
         this.list = list;
+        this.goToDetailActivity = goToDetailActivity;
+        this.context = context;
     }
 
     @NonNull
@@ -38,12 +44,16 @@ public class PopularAdapter extends RecyclerView.Adapter<PopularAdapter.PopularH
         holder.add.setOnClickListener(v -> {
             Toast.makeText(v.getContext(), "Add: "  + food.getTitle(), Toast.LENGTH_SHORT).show();
         });
+
         int drawableRes = holder.itemView.getContext().getResources()
                 .getIdentifier(food.getPic(), "drawable", holder.itemView.getContext().getPackageName());
-        holder.picFood.setImageResource(drawableRes);
+
+        Picasso.get()
+                .load(drawableRes)
+                .into(holder.picFood);
 
         holder.itemFoodLayout.setOnClickListener(v -> {
-            Toast.makeText(v.getContext(), "Click: " + food.getTitle(), Toast.LENGTH_SHORT).show();
+            goToDetailActivity.sendObject(food);
         });
     }
 

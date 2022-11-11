@@ -62,7 +62,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
-        android:backgroundTint="#FB8C00"
+        android:backgroundTint="@color/orange"
         android:focusable="false"
         android:insetLeft="0dp"
         android:insetTop="0dp"

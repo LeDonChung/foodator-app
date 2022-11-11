@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FoodatorApp">
         <activity
+            android:name=".activities.CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.DetailActivity"
+            android:exported="false" />
+        <activity
             android:name=".activities.IntroActivity"
             android:exported="false" />
         <activity

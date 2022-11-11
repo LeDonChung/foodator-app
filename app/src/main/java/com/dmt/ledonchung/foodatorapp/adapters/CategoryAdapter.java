@@ -1,6 +1,6 @@
 package com.dmt.ledonchung.foodatorapp.adapters;
 
-import android.graphics.Color;
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,13 +13,16 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.dmt.ledonchung.foodatorapp.R;
 import com.dmt.ledonchung.foodatorapp.models.Category;
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
 public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.CategoryHolder>{
     private final List<Category> list;
-    public CategoryAdapter(List<Category> list) {
+    private Context context;
+    public CategoryAdapter(List<Category> list, Context context) {
         this.list = list;
+        this.context = context;
     }
 
     @NonNull
@@ -39,7 +42,10 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Catego
 
         int drawableRes = holder.itemView.getContext().getResources()
                 .getIdentifier(category.getPicture(), "drawable", holder.itemView.getContext().getPackageName());
-        holder.picCategory.setImageResource(drawableRes);
+
+        Picasso.get()
+                .load(drawableRes)
+                .into(holder.picCategory);
 
         holder.itemCategoryLayout.setOnClickListener(v -> {
             //
