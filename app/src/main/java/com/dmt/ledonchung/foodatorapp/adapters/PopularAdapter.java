@@ -55,6 +55,10 @@ public class PopularAdapter extends RecyclerView.Adapter<PopularAdapter.PopularH
         holder.itemFoodLayout.setOnClickListener(v -> {
             goToDetailActivity.sendObject(food);
         });
+
+        holder.feeFood.setText(food.getFee() + "");
+
+
     }
 
     @Override
@@ -66,12 +70,14 @@ public class PopularAdapter extends RecyclerView.Adapter<PopularAdapter.PopularH
         private CardView itemFoodLayout;
         private ImageView picFood;
         private TextView add;
+        private TextView feeFood;
 
         public PopularHolder(@NonNull View itemView) {
             super(itemView);
             itemFoodLayout = itemView.findViewById(R.id.item_food_layout);
             picFood = itemView.findViewById(R.id.pic_food);
             add = itemView.findViewById(R.id.add);
+            feeFood = itemView.findViewById(R.id.fee_food);
         }
     }
 

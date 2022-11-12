@@ -11,6 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.dmt.ledonchung.foodatorapp.R;
+import com.dmt.ledonchung.foodatorapp.interfaces.ChangeNumberItemsListener;
 import com.dmt.ledonchung.foodatorapp.models.Food;
 import com.dmt.ledonchung.foodatorapp.models.ManagementCart;
 import com.squareup.picasso.Picasso;
@@ -80,8 +81,8 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.CartHolder> {
         private final TextView feeFood;
         private final TextView totalFee_cart;
         private final TextView numberIn_cart;
-        private final TextView minusCart;
-        private final TextView plusCart;
+        private final ImageView minusCart;
+        private final ImageView plusCart;
 
         public CartHolder(@NonNull View itemView) {
             super(itemView);

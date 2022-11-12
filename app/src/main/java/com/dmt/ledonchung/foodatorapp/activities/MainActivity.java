@@ -55,10 +55,10 @@ public class MainActivity extends AppCompatActivity {
         List<Food> listFoods = new ArrayList<>();
         listFoods.add(new Food("Pepperoni pizza", "pizza", "slices pepperoni, cheese, fresh oregano, ground black pepper, pizza sauce", 9.76));
         listFoods.add(new Food("Cheese Burger", "pizza", "slices pepperoni, cheese, fresh oregano, ground black pepper, pizza sauce", 8));
-        listFoods.add(new Food("Cheese Burger", "pizza", "slices pepperoni, cheese, fresh oregano, ground black pepper, pizza sauce", 5.6));
-        listFoods.add(new Food("Cheese Burger", "pizza", "slices pepperoni, cheese, fresh oregano, ground black pepper, pizza sauce", 10.2));
-        listFoods.add(new Food("Cheese Burger", "pizza", "slices pepperoni, cheese, fresh oregano, ground black pepper, pizza sauce", 4));
-        listFoods.add(new Food("Cheese Burger", "pizza", "slices pepperoni, cheese, fresh oregano, ground black pepper, pizza sauce", 1));
+        listFoods.add(new Food("Milk Tea", "pizza", "slices pepperoni, cheese, fresh oregano, ground black pepper, pizza sauce", 5.6));
+        listFoods.add(new Food("Bee Kio", "pizza", "slices pepperoni, cheese, fresh oregano, ground black pepper, pizza sauce", 10.2));
+        listFoods.add(new Food("Tiger Bja", "pizza", "slices pepperoni, cheese, fresh oregano, ground black pepper, pizza sauce", 4));
+        listFoods.add(new Food("Banh Gao", "pizza", "slices pepperoni, cheese, fresh oregano, ground black pepper, pizza sauce", 1));
 
         PopularAdapter popularAdapter = new PopularAdapter(listFoods, new GoToDetailActivity() {
             @Override

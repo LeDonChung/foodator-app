@@ -1,4 +1,4 @@
-package com.dmt.ledonchung.foodatorapp.adapters;
+package com.dmt.ledonchung.foodatorapp.interfaces;
 
 public interface ChangeNumberItemsListener {
     void change();

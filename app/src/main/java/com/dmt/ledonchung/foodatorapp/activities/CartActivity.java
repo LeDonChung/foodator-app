@@ -10,10 +10,9 @@ import android.view.MenuItem;
 
 import com.dmt.ledonchung.foodatorapp.R;
 import com.dmt.ledonchung.foodatorapp.adapters.CartAdapter;
-import com.dmt.ledonchung.foodatorapp.adapters.ChangeNumberItemsListener;
+import com.dmt.ledonchung.foodatorapp.interfaces.ChangeNumberItemsListener;
 import com.dmt.ledonchung.foodatorapp.databinding.ActivityCartActitivyBinding;
 import com.dmt.ledonchung.foodatorapp.models.ManagementCart;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
 public class CartActivity extends AppCompatActivity {

@@ -2,7 +2,7 @@ package com.dmt.ledonchung.foodatorapp.models;
 
 import android.content.Context;
 
-import com.dmt.ledonchung.foodatorapp.adapters.ChangeNumberItemsListener;
+import com.dmt.ledonchung.foodatorapp.interfaces.ChangeNumberItemsListener;
 
 import java.util.ArrayList;
 import java.util.List;

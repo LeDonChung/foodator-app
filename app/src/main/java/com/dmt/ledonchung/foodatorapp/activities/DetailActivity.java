@@ -22,9 +22,9 @@ public class DetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityDetailBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-
         getData();
         setData();
+        initUI();
         event();
     }
     public void initUI() {
